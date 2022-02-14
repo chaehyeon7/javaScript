@@ -4,6 +4,6 @@ function shadowing_exmaple(){
     val++;
 }
 
-vat val = 0;
+var val = 0;
 shadowing_exmaple();
 console.log("O", val);

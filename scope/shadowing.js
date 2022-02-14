@@ -1,4 +1,5 @@
 function shadowing_exmaple(){
+    var val = 0;
     console.log("F", val);
     val++;
 }

@@ -3,7 +3,15 @@ function f(){
     console.log("f is ccalled");
 }
 
-var o = {name:"object", method:f};
+function setName(name){
+    this.name=name;
+}
 
-f();
-o.method();
+
+var o = {name:"object", method:f};
+var o2 = {name:"",setName:setName};
+
+o.setName("object1");
+o2.setName("object2")
+
+console.log(o, o2);
